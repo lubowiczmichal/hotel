@@ -1,0 +1,33 @@
+:root {
+  --height: 400px;
+}
+
+.Lobby {
+  margin: auto;
+  background-image: url("../assets/Lobby.png");
+  background-position: center;
+  height: var(--height);
+  background-size: cover;
+}
+
+.Wedding {
+  margin: auto;
+  background-image: url("../assets/Wedding.png");
+  background-position: center;
+  height: var(--height);
+  background-size: cover;
+}
+
+.Lobby > #Text,
+.Wedding > #Text {
+  color: white;
+  padding-top: calc(var(--height) / 2);
+}
+
+.Lobby > #ReserveButton {
+  color: white;
+}
+
+.Wedding > #AdditionalText {
+  color: white;
+}

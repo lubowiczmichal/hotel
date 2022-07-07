@@ -1,0 +1,41 @@
+:root {
+  --customPurple: #9b51e0;
+}
+
+.AboutSection {
+  padding: 4em 1em 1em 1em;
+  text-align: left;
+  display: flex;
+}
+
+.AboutSection > .Texts {
+  margin-right: 2.5em;
+}
+
+.AboutSection > .TextSection > h2 {
+  font-size: 18px;
+}
+
+.AboutSection > .TextSection > .readMoreButton {
+  width: fit-content;
+  padding: 0.3em;
+  color: white;
+  background-color: var(--customPurple);
+}
+
+.AboutSection > .TextSection > h2 > span {
+  color: var(--customPurple);
+}
+
+.AboutSection > .ImageSection {
+}
+
+.AboutSection > .ImageSection > img {
+  margin-top: 1em;
+  width: 40vh;
+}
+
+.AboutSection > .ImageSection > .Label {
+  font-weight: bold;
+  text-align: center;
+}

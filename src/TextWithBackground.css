@@ -4,7 +4,7 @@
 
 .Lobby {
   margin: auto;
-  background-image: url("../assets/Lobby.png");
+  background-image: url("./assets/homepage/Lobby.png");
   background-position: center;
   height: var(--height);
   background-size: cover;
@@ -12,7 +12,7 @@
 
 .Wedding {
   margin: auto;
-  background-image: url("../assets/Wedding.png");
+  background-image: url("./assets/homepage/Wedding.png");
   background-position: center;
   height: var(--height);
   background-size: cover;

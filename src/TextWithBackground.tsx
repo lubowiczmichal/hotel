@@ -1,5 +1,5 @@
 import React from "react";
-import { weddingText } from "../Texts";
+import { weddingText } from "./Texts";
 import "./TextWithBackground.css";
 
 function TextWithBackground(props: { mode: String }) {

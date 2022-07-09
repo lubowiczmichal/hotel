@@ -5,7 +5,9 @@ function PhotoGalleryItem(props: { photos: string; number: Number }) {
   let image;
   switch (props.photos) {
     case "room":
-      image = require("../assets/gallery/room" + props.number + ".png");
+      image = require("../assets/homepage/gallery/room" +
+        props.number +
+        ".png");
       break;
     default:
       image = null;

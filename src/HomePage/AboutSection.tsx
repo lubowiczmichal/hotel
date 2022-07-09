@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutSection.css";
-import bedroom from "../assets/Bedroom.png";
+import bedroom from "../assets/homepage/Bedroom.png";
 import { aboutText1, aboutText2 } from "../Texts";
 function AboutSection() {
   return (

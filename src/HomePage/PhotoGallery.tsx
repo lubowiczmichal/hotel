@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import "./PhotoGallery.css";
 import PhotoGalleryItem from "./PhotoGalleryItem";
-import Button from "@mui/material/Button";
-import { styled } from "@mui/material/styles";
 import { ButtonPrevNext } from "../CustomElements";
 
 function PhotoGallery(props: { photos: string; size: number }) {

@@ -3,7 +3,7 @@ import MuiButton from "@mui/material/Button";
 
 const customPurple = "#9b51e0";
 
-export const ButtonPrevNext = styled(MuiButton)((props) => ({
+export const ButtonPrevNext = styled(MuiButton)(() => ({
   borderRadius: "50%",
   width: "5em",
   height: "5em",

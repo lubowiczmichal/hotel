@@ -1,0 +1,15 @@
+:root {
+  --size: 15em;
+}
+
+.PhotoGalleryItem {
+  padding: 1em;
+  width: var(--size);
+  height: var(--size);
+}
+
+.PhotoGalleryItem > .Image {
+  width: var(--size);
+  height: var(--size);
+  object-fit: cover;
+}

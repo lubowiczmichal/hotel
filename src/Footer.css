@@ -1,0 +1,12 @@
+.Footer {
+  color: white;
+  background-color: #3e3c3c;
+  display: flex;
+}
+
+.Footer > .LeftSection {
+}
+
+.Footer > .rightSection {
+  display: flex;
+}

@@ -29,7 +29,9 @@ function NavBar() {
       <h1 id="logo">Hotel Lunar</h1>
       <>
         {navItems.map(function (item) {
-          return <NavItem itemName={item} selected={item === selected} />;
+          return (
+            <NavItem itemName={item} selected={item === selected} key={item} />
+          );
         })}
       </>
     </div>

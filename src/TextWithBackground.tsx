@@ -18,6 +18,13 @@ function TextWithBackground(props: { mode: String }) {
           <p id="AdditionalText">{weddingText}</p>
         </div>
       );
+    case "rooms":
+      return (
+        <div className="Rooms">
+          <p id="Text">Events & Weddings</p>
+          <p id="AdditionalText">{weddingText}</p>
+        </div>
+      );
     default:
       return <></>;
   }

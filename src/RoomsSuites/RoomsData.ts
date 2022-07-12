@@ -26,6 +26,14 @@ const roomData: Room[] = [
     price: 50,
     image: standardSingleRoom,
   },
+  {
+    name: "Standard Double Room",
+    bathrooms: 2,
+    beds: 2,
+    people: 2,
+    price: 500,
+    image: standardSingleRoom,
+  },
 ];
 export { roomData };
 export type { Room };

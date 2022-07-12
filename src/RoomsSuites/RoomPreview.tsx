@@ -11,9 +11,15 @@ function RoomPreview(props: {
       <img id="Image" src={props.room.image} />
       <h3>{props.room.name}</h3>
       <ul>
-        <li>{props.room.bathrooms}</li>
-        <li>{props.room.beds}</li>
-        <li>{props.room.people}</li>
+        <li>
+          {props.room.bathrooms} bathroom{props.room.bathrooms > 1 ? "s" : ""}
+        </li>
+        <li>
+          {props.room.beds} bed{props.room.beds > 1 ? "s" : ""}
+        </li>
+        <li>
+          {props.room.people} {props.room.people > 1 ? "people" : "person"}
+        </li>
       </ul>
       <div className="PriceSection">
         <p>

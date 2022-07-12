@@ -1,11 +1,13 @@
 .RoomPreview {
   list-style: inside;
+  width: 40%;
 }
 
 .RoomPreview > ul {
   text-align: left;
 }
 .RoomPreview > #Image {
-  width: 100px;
-  height: 100px;
+  width: 80%;
+  height: 175px;
+  object-fit: cover;
 }

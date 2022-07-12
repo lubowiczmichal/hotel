@@ -18,6 +18,14 @@
   background-size: cover;
 }
 
+.Wedding {
+  margin: auto;
+  background-image: url("./assets/rooms/roomsBackground.png");
+  background-position: center;
+  height: var(--height);
+  background-size: cover;
+}
+
 .Lobby > #Text,
 .Wedding > #Text {
   color: white;

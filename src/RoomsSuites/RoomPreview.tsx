@@ -26,6 +26,7 @@ function RoomPreview(props: {
           {((props.room.price * 1) / props.currencyRate).toFixed(2)}{" "}
           {props.currency}
         </p>
+        <p>BOOK NOW</p>
       </div>
     </div>
   );

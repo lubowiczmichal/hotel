@@ -1,13 +1,20 @@
 .RoomPreview {
   list-style: inside;
   width: 40%;
+  margin: 1em 0 1em 0;
 }
 
 .RoomPreview > ul {
   text-align: left;
 }
-.RoomPreview > #Image {
+.RoomPreview > img {
   width: 80%;
   height: 175px;
   object-fit: cover;
+}
+
+.RoomPreview > .PriceSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em 0 1em;
 }

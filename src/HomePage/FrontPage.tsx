@@ -6,6 +6,7 @@ import AboutSection from "./AboutSection";
 import PhotoGallery from "./PhotoGallery";
 import Footer from "../Footer";
 import RoomsOverview from "../RoomsSuites/RoomsOverview";
+import FacilitiesOverview from "../Facilities/FacilitiesOverview";
 
 function FrontPage() {
   return (
@@ -17,6 +18,7 @@ function FrontPage() {
       <PhotoGallery photos="room" size={10} />
       <Footer />
       <RoomsOverview />
+      <FacilitiesOverview />
     </div>
   );
 }

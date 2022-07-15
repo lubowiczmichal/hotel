@@ -8,6 +8,7 @@
   background-position: center;
   height: var(--height);
   background-size: cover;
+  margin-bottom: 5em;
 }
 
 .Wedding {
@@ -16,18 +17,31 @@
   background-position: center;
   height: var(--height);
   background-size: cover;
+  margin-bottom: 5em;
 }
 
-.Wedding {
+.Rooms {
   margin: auto;
   background-image: url("./assets/rooms/roomsBackground.png");
   background-position: center;
   height: var(--height);
   background-size: cover;
+  margin-bottom: 5em;
+}
+
+.Facilities {
+  margin: auto;
+  background-image: url("./assets/facilities/facilitiesBackground.png");
+  background-position: center;
+  height: var(--height);
+  background-size: cover;
+  margin-bottom: 5em;
 }
 
 .Lobby > #Text,
-.Wedding > #Text {
+.Wedding > #Text,
+.Rooms > #Text,
+.Facilities > #Text {
   color: white;
   padding-top: calc(var(--height) / 2);
 }

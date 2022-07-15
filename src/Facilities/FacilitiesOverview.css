@@ -1,7 +1,7 @@
-.RoomsOverview {
+.FacilitiesOverview {
 }
 
-.RoomsOverview > .RoomsSection {
+.FacilitiesOverview > .FacilitiesSection {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

@@ -1,0 +1,11 @@
+.FacilityItem {
+  list-style: inside;
+  width: 40%;
+  margin: 1em 0 1em 0;
+}
+
+.FacilityItem > img {
+  width: 80%;
+  height: 175px;
+  object-fit: cover;
+}

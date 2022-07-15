@@ -7,6 +7,7 @@ import PhotoGallery from "./PhotoGallery";
 import Footer from "../Footer";
 import RoomsOverview from "../RoomsSuites/RoomsOverview";
 import FacilitiesOverview from "../Facilities/FacilitiesOverview";
+import Contact from "../Contact/Contact";
 
 function FrontPage() {
   return (
@@ -19,6 +20,7 @@ function FrontPage() {
       <Footer />
       <RoomsOverview />
       <FacilitiesOverview />
+      <Contact />
     </div>
   );
 }

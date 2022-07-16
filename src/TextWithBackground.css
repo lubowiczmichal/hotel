@@ -2,46 +2,43 @@
   --height: 400px;
 }
 
-.Lobby {
+.Lobby,
+.Wedding,
+.Rooms,
+.Facilities,
+.Contact {
   margin: auto;
-  background-image: url("./assets/homepage/Lobby.png");
   background-position: center;
   height: var(--height);
   background-size: cover;
   margin-bottom: 5em;
+}
+
+.Lobby {
+  background-image: url("./assets/homepage/Lobby.png");
 }
 
 .Wedding {
-  margin: auto;
   background-image: url("./assets/homepage/Wedding.png");
-  background-position: center;
-  height: var(--height);
-  background-size: cover;
-  margin-bottom: 5em;
 }
 
 .Rooms {
-  margin: auto;
   background-image: url("./assets/rooms/roomsBackground.png");
-  background-position: center;
-  height: var(--height);
-  background-size: cover;
-  margin-bottom: 5em;
 }
 
 .Facilities {
-  margin: auto;
   background-image: url("./assets/facilities/facilitiesBackground.png");
-  background-position: center;
-  height: var(--height);
-  background-size: cover;
-  margin-bottom: 5em;
+}
+
+.Contact {
+  background-image: url("./assets/contact/contactBackground.png");
 }
 
 .Lobby > #Text,
 .Wedding > #Text,
 .Rooms > #Text,
-.Facilities > #Text {
+.Facilities > #Text,
+.Contact > #Text {
   color: white;
   padding-top: calc(var(--height) / 2);
 }

@@ -10,40 +10,37 @@ import { NBPResponse, Rate } from "../Models";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 
+const PLN: Rate = { code: "PLN", currency: "Zloty", ask: 1.0, bid: 1.0 };
 function RoomsOverview() {
   const rooms = roomData;
   const [currencies, setCurrencies] = useState<Rate[]>([]);
-  const [selectedCurrency, setSelectedCurrency] = React.useState<string>("PLN");
-  const [rate, setRate] = React.useState<number>(1.0);
-  React.useState<string>("");
-
-  const PLN: Rate = { code: "PLN", currency: "Zloty", ask: 1.0, bid: 1.0 };
-
-  async function getNBPRates() {
-    await fetch("https://api.nbp.pl/api/exchangerates/tables/C/?format=json")
-      .then((res) => res.json())
-      .then(
-        (result: NBPResponse[]) => {
-          const temp: Rate[] = result[0].rates.filter(
-            (rate) => rate.code != "XDR"
-          );
-          temp.push(PLN);
-          setCurrencies(temp);
-        },
-        (error) => console.log(error)
-      );
-  }
+  const [selectedCurrency, setSelectedCurrency] = useState<string>("PLN");
+  const [rate, setRate] = useState<number>(1.0);
 
   function getCurrencyRate(currencyCode: string) {
     if (currencyCode === "PLN") {
       return 1.0;
     } else {
-      return currencies.filter((rate: Rate) => rate.code == currencyCode)[0]
+      return currencies.filter((rate: Rate) => rate.code === currencyCode)[0]
         .ask;
     }
   }
 
   useEffect(() => {
+    async function getNBPRates() {
+      await fetch("https://api.nbp.pl/api/exchangerates/tables/C/?format=json")
+        .then((res) => res.json())
+        .then(
+          (result: NBPResponse[]) => {
+            const temp: Rate[] = result[0].rates.filter(
+              (rate) => rate.code !== "XDR"
+            );
+            temp.push(PLN);
+            setCurrencies(temp);
+          },
+          (error) => console.log(error)
+        );
+    }
     getNBPRates();
   }, []);
 

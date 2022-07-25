@@ -13,7 +13,9 @@ function FacilitiesOverview() {
       <TextWithBackground mode="facilities" />
       <div className="FacilitiesSection">
         {facilitiesData.map((item) => {
-          return <FacilityItem name={item.name} image={item.image} />;
+          return (
+            <FacilityItem name={item.name} image={item.image} key={item.name} />
+          );
         })}
         {facilitiesData.length % 2 !== 0 ? (
           <div className="FacilityItem"></div>

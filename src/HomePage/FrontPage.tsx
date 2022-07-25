@@ -18,9 +18,6 @@ function FrontPage() {
       <TextWithBackground mode="wedding" />
       <PhotoGallery photos="room" size={10} />
       <Footer />
-      <RoomsOverview />
-      <FacilitiesOverview />
-      <Contact />
     </div>
   );
 }

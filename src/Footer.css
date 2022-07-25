@@ -2,11 +2,47 @@
   color: white;
   background-color: #3e3c3c;
   display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
 }
 
-.Footer > .LeftSection {
+.Footer > .leftSection {
+  width: 50%;
+}
+
+.Footer > .leftSection > #motto {
+  margin-top: -1.5em;
+  font-size: 13px;
 }
 
 .Footer > .rightSection {
   display: flex;
+  width: 50%;
+}
+
+.Footer > .rightSection > .rightColumn {
+  width: 50%;
+}
+
+.Footer > .rightSection > .rightColumn > .link {
+  color: white;
+  text-decoration: none;
+}
+
+.Footer > .rightSection > .leftColumn > .link {
+  color: white;
+  text-decoration: none;
+}
+
+.Footer > .rightSection > .leftColumn > .link > .linkText {
+  margin: 1em;
+}
+
+.Footer > .rightSection > .rightColumn > .link > .linkText {
+  margin: 1em;
+}
+
+.Footer > .rightSection > .leftColumn {
+  width: 50%;
 }

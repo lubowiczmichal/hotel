@@ -77,6 +77,7 @@ function RoomsOverview() {
               room={room}
               currency={selectedCurrency}
               currencyRate={rate}
+              key={room.name}
             />
           );
         })}

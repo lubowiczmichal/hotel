@@ -35,6 +35,10 @@ root.render(
           path="snapchat"
           element={<ExternalUrl link="https://www.snapchat.com" />}
         />
+        <Route
+          path="booking"
+          element={<ExternalUrl link="https://www.booking.com" />}
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

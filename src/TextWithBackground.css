@@ -11,8 +11,7 @@
   background-position: center;
   height: var(--height);
   background-size: cover;
-  margin-bottom: 5em;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -44,7 +43,18 @@
   padding-top: calc(var(--height) / 2);
 }
 
-.Lobby > #ReserveButton {
+.Wedding > #AdditionalText,
+.Rooms > #AdditionalText,
+.Facilities > #AdditionalText,
+.Contact > #AdditionalText {
+  margin: 0 5em 0 5em;
+}
+
+.Lobby > .link {
+  text-decoration: none;
+}
+
+.Lobby > .link > .linkText {
   color: white;
   border: 3px solid white;
   width: fit-content;

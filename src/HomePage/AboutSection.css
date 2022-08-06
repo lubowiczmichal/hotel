@@ -3,7 +3,7 @@
 }
 
 .AboutSection {
-  padding: 4em 1em 1em 1em;
+  padding: 2em 1em 1em 1em;
   text-align: left;
   display: flex;
 }
@@ -28,6 +28,7 @@
 }
 
 .AboutSection > .ImageSection {
+  margin-top: 2em;
 }
 
 .AboutSection > .ImageSection > img {

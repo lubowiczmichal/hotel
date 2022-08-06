@@ -1,5 +1,6 @@
 import React from "react";
-import { weddingText } from "./Texts";
+import { Link } from "react-router-dom";
+import { additionalText } from "./Texts";
 import "./TextWithBackground.css";
 
 function TextWithBackground(props: { mode: String }) {
@@ -8,21 +9,23 @@ function TextWithBackground(props: { mode: String }) {
       return (
         <div className="Lobby">
           <p id="Text">A Memorable Experience.</p>
-          <p id="ReserveButton">Reserve Now</p>
+          <Link className="link" to="/booking">
+            <div className="linkText">Reserve Now</div>
+          </Link>
         </div>
       );
     case "wedding":
       return (
         <div className="Wedding">
           <p id="Text">Events & Weddings</p>
-          <p id="AdditionalText">{weddingText}</p>
+          <p id="AdditionalText">{additionalText}</p>
         </div>
       );
     case "rooms":
       return (
         <div className="Rooms">
-          <p id="Text">Events & Weddings</p>
-          <p id="AdditionalText">{weddingText}</p>
+          <p id="Text">Rooms</p>
+          <p id="AdditionalText">{additionalText}</p>
         </div>
       );
     case "facilities":

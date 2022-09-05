@@ -4,3 +4,17 @@
   margin: auto;
   background-color: white;
 }
+
+.Phrase {
+  margin: 1em;
+  color: #555555;
+}
+.Form {
+  margin: 0 auto 0 auto;
+  width: 50%;
+}
+
+.Form > .TextField {
+  width: 100%;
+  margin: 1em;
+}

@@ -8,8 +8,9 @@
   display: flex;
 }
 
-.AboutSection > .Texts {
+.AboutSection > .TextSection {
   margin-right: 2.5em;
+  text-align: justify;
 }
 
 .AboutSection > .TextSection > h2 {
@@ -18,7 +19,7 @@
 
 .AboutSection > .TextSection > .readMoreButton {
   width: fit-content;
-  padding: 0.3em;
+  padding: 0.5em;
   color: white;
   background-color: var(--customPurple);
 }

@@ -1,5 +1,7 @@
-import standardSingleRoom from "../assets/rooms/standardSingleRoom.jpg";
-
+import standardSingleRoom from "../assets/rooms/standardSingleRoom.png";
+import deluxeSingleRoom from "../assets/rooms/deluxeSingleRoom.png";
+import standardDoubleRoom from "../assets/rooms/standardDoubleRoom.png";
+import familyRoom from "../assets/rooms/familyRoom.png";
 type Room = {
   name: string;
   bathrooms: number;
@@ -23,16 +25,24 @@ const roomData: Room[] = [
     bathrooms: 1,
     beds: 1,
     people: 1,
-    price: 50,
-    image: standardSingleRoom,
+    price: 250,
+    image: deluxeSingleRoom,
   },
   {
     name: "Standard Double Room",
-    bathrooms: 2,
-    beds: 2,
+    bathrooms: 1,
+    beds: 1,
     people: 2,
-    price: 500,
-    image: standardSingleRoom,
+    price: 400,
+    image: standardDoubleRoom,
+  },
+  {
+    name: "Family Room",
+    bathrooms: 2,
+    beds: 3,
+    people: 5,
+    price: 700,
+    image: familyRoom,
   },
 ];
 export { roomData };

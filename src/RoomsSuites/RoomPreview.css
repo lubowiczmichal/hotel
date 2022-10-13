@@ -10,7 +10,7 @@
 .RoomPreview > img {
   width: 80%;
   height: 175px;
-  object-fit: cover;
+  object-fit: initial;
 }
 
 .RoomPreview > .PriceSection {
